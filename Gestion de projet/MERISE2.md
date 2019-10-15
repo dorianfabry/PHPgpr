@@ -1,5 +1,5 @@
 # Analyse de l'application :
-Site informationnel : la présentation de produits multi marques (ex: le magasin LIDL).
+Site informationnel : la présentation de produits mono marque (ex: le magasin LIDL).
 
 ENTERMARCHE :
 
