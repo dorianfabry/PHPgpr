@@ -1,5 +1,2 @@
-# Analyse de l'application :
-Site informationnel : la présentation de produits multi marques (ex: le magasin LIDL). EntreMarché
-
+Analyse de l'application :
 Règle de gestion :
-==================
