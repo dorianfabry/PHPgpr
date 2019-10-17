@@ -1,4 +1,4 @@
-<?php class MusicDAO {
+<?php class articleDAO {
   private $db;
 
   public function __construct($path){
@@ -12,6 +12,10 @@
     {
       die('Erreur : ' . $e->getMessage());
     }
+  }
+
+  public function get(string $value,string $element){
+
   }
 
   ?>
