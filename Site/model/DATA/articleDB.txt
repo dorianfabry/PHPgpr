@@ -1,1 +1,10 @@
-JBL Pulse 4|Enceinte Bluetooth portable|enceinte|249.00|1|JBLPulse4
+JBL Pulse 4|Enceinte Bluetooth portable|enceinte|249.00|1|JBL_PULSE4_HERO_BLACK.jpg
+JBL Boombox|Enceinte Bluetooth portable|enceinte|499.00|2|JBL_Boombox_Black_Hero.jpg
+JBL Pulse 3|Enceinte Bluetooth portable|enceinte|249.00|3|JBL_PULSE3_HERO_BLACK.jpg
+JBL GO 2| Mini enceinte Bluetooth portable|enceinte|34.99|4|JBL_Go2_Hero_Midnight_Black.jpg
+JBL Xtreme 2|Enceinte Bluetooth portable|enceinte|299.00|5|Extreme2_Hero_ForrestGreen.jpg
+JBL LIVE 650BTNC|Casque circum-auriculaire|casque|199.00|6|JBL_LIVE650BTNC_Hero_Black.jpg
+JBL LIVE 500BT|Casque circum-auriculaire|casque|149.00|7|JBL_LIVE500BT_Hero_Black.jpg
+JBL LIVE 300TWS|Ecouteurs sans_fil|casque|169.00|8|JBL_LIVE 300TWS_Black_with Charging Case.jpg
+JBL REFLECT FLOW|Ecouteurs sans_fil|casque|149.00|9|JBL_REFLECT_FLOW_Hero_Black.jpg
+JBL LIVE 220BT|Ecouteurs sans_fil|casque|79.99|10|JBL_LIVE220BT_Hero_Black.jpg
