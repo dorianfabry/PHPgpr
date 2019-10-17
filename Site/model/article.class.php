@@ -11,7 +11,7 @@ class Article
   public $reference;
   public $photo;
 
-  function __construct($_array)
+  public function __construct($_array)
   {
       setIntitule($_array[0]);
 
