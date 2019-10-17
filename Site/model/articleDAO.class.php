@@ -4,8 +4,8 @@
   public function __construct($path){
     $database ='sqlite:'.$path.'/article.db';
     try{
-    $this->db = new PDO($database);
-    //var_dump($database);
+      $this->db = new PDO($database);
+      //var_dump($database);
     }
 
     catch (Exception $e)
@@ -14,8 +14,20 @@
     }
   }
 
-  public function get(string $value,string $element){
+  public function get( $value,string $element){
+    switch ($element) {
+      case 'intitule':
+      $recherche = $this->db->query("SELECT * FROM article WHERE intitule LIKE '%$value%'");
+      break;
+      case 'type':
+      $recherche = $this->db->query("SELECT * FROM article WHERE type='$value'");
+      break;
+      case 'prix':
+      $recherche = $this->db->query("SELECT * FROM article WHERE prix<=$value ");
+      break;
 
+    }
+    $resultats=$recherche->fetchAll(PDO::FETCH_CLASS);
   }
 
   ?>
