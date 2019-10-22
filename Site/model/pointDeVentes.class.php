@@ -15,15 +15,18 @@ class pointDeVentes
   {
           setIntitule($_array[0]);
 
-          setDescription($_array[1]);
+          setAdresse($_array[1]);
 
-          setType($_array[2]);
-
-          setPrix($_array[3]);
-
-          setReference($_array[4]);
-
-          setPhoto($_array[5]);
+          setArticles($_array[2]);
+  }
+  public function setIntitule($value){
+    $this->intitule = $value;
+  }
+  public function setAdresse($value){
+    $this->description  = $value;
+  }
+  public function setArticles($value){
+    $this->type = $value;
   }
 }
 
