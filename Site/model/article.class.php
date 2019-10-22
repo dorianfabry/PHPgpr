@@ -31,6 +31,17 @@ class Article
     return $this->photo;
   }
 
+  public function loadPointDeVentesDB(){
+  $taball = NULL;
+  $dh = fopen("articleDB.txt","r");
+  for ($i=0; $i < 10; $i++) {
+    $tab = explode('|',rtrim(fgets($dh)),200); //convertis la chaine en tableau
+    $pointDeVentes = NEW Article($tab[0],$tab[1],$tab[2],$tab[3],$tab[4],$tab[5]);
+    $taball[$tab[0]] = $tab;
+  }
+  return $taball;
+}
+
 }
 
 
