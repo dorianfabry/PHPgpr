@@ -31,7 +31,7 @@ class Article
     return $this->photo;
   }
 
-  public function loadPointDeVentesDB(){
+  public function load(){
   $taball = NULL;
   $dh = fopen("articleDB.txt","r");
   for ($i=0; $i < 10; $i++) {
