@@ -29,11 +29,14 @@ class pointDeVentes
 
   public function loadPointDeVentesDB(){
   $tab = NULL;
+  $tabarticles = NULL;
   $taball = NULL;
   $dh = fopen("pointDeVentesDB.txt","r"); // dh pointeur
-  for ($i=0; $i < 30; $i++) {
+  $dj = fopen("articlePointDeVentesDB.txt","r");
+  for ($i=0; $i < 6; $i++) {
     $tab = explode('|',rtrim(fgets($dh)),200); //convertis la chaine en tableau
-    $pointDeVentes = NEW pointDeVentes($tab[0],$tab[1],$tab[2]); //$tab[2] est l'array list d'articles
+    $tabarticles = explode(',',rtrim(fgets($dj)),200); //permet de creer un tableau de n° d'articles
+    $pointDeVentes = NEW pointDeVentes($tab[0],$tab[1],$tabarticles);
     $taball[$tab[0]] = $tab;
   }
   return $taball;

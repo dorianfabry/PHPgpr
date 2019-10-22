@@ -1,5 +1,5 @@
-1|FNAC|4 Rue Félix Poulat, 38000 Grenoble|articles
-2|LDLC|7 Rue Charles Darwin, 38400 Saint-Martin-d'Hères|articles
-3|Materiel.net|153 Route de Grenoble, 69800 Saint-Priest|articles
-4|Exalys|107 Cours Berriat, 38000 Grenoble|articles
-5|Orange|17 Place Grenette, 38000 Grenoble|articles
+1|FNAC|4 Rue Félix Poulat, 38000 Grenoble
+2|LDLC|7 Rue Charles Darwin, 38400 Saint-Martin-d'Hères
+3|Materiel.net|153 Route de Grenoble, 69800 Saint-Priest
+4|Exalys|107 Cours Berriat, 38000 Grenoble
+5|Orange|17 Place Grenette, 38000 Grenoble

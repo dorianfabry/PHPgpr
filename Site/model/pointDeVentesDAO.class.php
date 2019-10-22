@@ -2,7 +2,6 @@
 require_once('../model/pointDeVentes.class.php');
 class pointDeVentesDAO {
   private $db;
-
   public function __construct($path){
     $database ='sqlite:'.$path.'/pointDeVentes.db';
     try{
