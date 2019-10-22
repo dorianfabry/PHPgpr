@@ -1,6 +1,6 @@
 CREATE TABLE ARTICLE (
 intitule string,
-description string;
+description string,
 type string,
 prix float,
 reference string,
