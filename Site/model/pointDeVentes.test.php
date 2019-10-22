@@ -6,8 +6,8 @@ require_once('pointDeVentesDAO.class.php');
 $config = parse_ini_file('../config/config.ini');
 
 // Creation de l'instace DAO
-$jukebox = new MusicDAO($config['database_path']);
+$pointDeVentes = new pointDeVentesDAO($config['database_path']);
 
-$m = $jukebox->get(1);
+$m = $pointDeVentes->get(1);
 var_dump($m);
 ?>
