@@ -10,22 +10,35 @@
   <title>BoomBox</title>
 </head>
 <body>
-  <h1>BoomBox</h1>
+  <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+    <a class="navbar-brand" href="#">BoomBox</a>
+    <ul class="navbar-nav">
 
-  <a href="#" id="logo"><img src="" alt=""></a>
-  <nav>
-    <ul>
-      <li><a href="#">Casque</a></li>
-      <li><a href="#">Enceintes</a></li>
-      <li><a href="#">Histoires</a></li>
-      <li><a href="#">Assistance</a></li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarCasque" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Casque
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarCasque">
+          <a class="dropdown-item" href="#">Ecouteurs sans fil</a>
+          <a class="dropdown-item" href="#">Circum-auriculaires</a>
+          <a class="dropdown-item" href="#">Anti-Bruit</a>
+      </li>
+
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarEnceintes" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Enceintes
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarEnceintes">
+          <a class="dropdown-item" href="#">PartyBox</a>
+          <a class="dropdown-item" href="#">Barres de son</a>
+          <a class="dropdown-item" href="#">Enceintes Portables</a>
+      </li>
+
+      <li class="nav-item"><a class="nav-link" href="#">Histoires</a></li>
+
+      <li class="nav-item"><a class="nav-link" href="#">Assistance</a></li>
     </ul>
   </nav>
-  <a href="#"><img src="" alt=""></a>
-  <a href="#"><img src="" alt=""></a>
-  <a href="#"><img src="" alt=""></a>
-
-
   <section id="main">
     <div class="carousel" class="carousel slide" data-ride="carousel">
       <ol class="carousel-indicators">
@@ -36,13 +49,13 @@
 
       <div class="carousel-inner">
     <div class="carousel-item active">
-      <img class="d-block w-100" src="/img_sites/illustration/HP_banner_JBL-Pulse-4-Stairs_desktop2.png" alt="First slide">
+      <img class="d-block w-100" src="img_sites/illustration/HP_banner_JBL-Pulse-4-Stairs_desktop2.png" alt="First slide">
     </div>
     <div class="carousel-item">
-      <img class="d-block w-100" src="/img_sites/illustration/SC02886_JBL_Flip5_Web_Banners_2880x1080.jpg" alt="Second slide">
+      <img class="d-block w-100" src="img_sites/illustration/SC02886_JBL_Flip5_Web_Banners_2880x1080.jpg" alt="Second slide">
     </div>
     <div class="carousel-item">
-      <img class="d-block w-100" src="/img_sites/illustration/SC02673_JBL_Partybox_Banner_2880x1080px.jpg" alt="Third slide">
+      <img class="d-block w-100" src="img_sites/illustration/SC02673_JBL_Partybox_Banner_2880x1080px.jpg" alt="Third slide">
     </div>
   </div>
 
@@ -50,13 +63,13 @@
   </section>
 
   <footer>
-    <nav>
-      <ul>
-        <li><a href="#">Nous Contacter</a></li>
-        <li><a href="#">F.A.Q</a></li>
-        <li><a href="#">Mention légales</a></li>
-        <li><a href="#">Conditions d'utilisation</a></li>
-        <li><a href="#">Qui sommes nous?</a></li>
+    <nav nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link" href="#">Nous Contacter</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">F.A.Q</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Mention légales</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Conditions d'utilisation</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Qui sommes nous?</a></li>
       </ul>
     </nav>
   </footer>
