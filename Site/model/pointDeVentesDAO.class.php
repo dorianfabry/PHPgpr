@@ -1,8 +1,10 @@
-<?php class articleDAO {
+<?php
+require_once('../model/pointDeVentes.class.php');
+class pointDeVentesDAO {
   private $db;
 
   public function __construct($path){
-    $database ='sqlite:'.$path.'/article.db';
+    $database ='sqlite:'.$path.'/pointDeVentes.db';
     try{
       $this->db = new PDO($database);
       //var_dump($database);
@@ -14,21 +16,11 @@
     }
   }
 
-  public function get( $value,string $element):array(Article){
-    switch ($element) {
-      case 'intitule':
-      $recherche = $this->db->query("SELECT * FROM article WHERE intitule LIKE '%$value%'");
-      break;
-      case 'type':
-      $recherche = $this->db->query("SELECT * FROM article WHERE type='$value'");
-      break;
-      case 'prix':
-      $recherche = $this->db->query("SELECT * FROM article WHERE prix<=$value ");
-      break;
-
-    }
-    $resultats=$recherche->fetchAll(PDO::FETCH_CLASS,'Article');
-    return $resultats;
+  public function get($id){
+    $req = "SELECT * FROM pointDeVentes WHERE id='$id'";
+    $sth=$this->db->query($req);
+    $resultats=$sth->fetchAll(PDO::FETCH_CLASS,'pointDeVentes');
+    return $resultats[0];
   }
 
   ?>
