@@ -12,7 +12,10 @@
 
       foreach ($article as $produit) {
            ?>
-      
+           <div class="container-fluid">
+             <img src="<?php  $config['image_path'] .$produit->photo ?>" alt="">
+           </div>
+
 
 
 
