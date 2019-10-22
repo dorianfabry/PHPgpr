@@ -14,7 +14,7 @@
     }
   }
 
-  public function get( $value,string $element){
+  public function get( $value,string $element):array(Article){
     switch ($element) {
       case 'intitule':
       $recherche = $this->db->query("SELECT * FROM article WHERE intitule LIKE '%$value%'");
@@ -27,7 +27,8 @@
       break;
 
     }
-    $resultats=$recherche->fetchAll(PDO::FETCH_CLASS);
+    $resultats=$recherche->fetchAll(PDO::FETCH_CLASS,'Article');
+    return $resultats;
   }
 
   ?>
