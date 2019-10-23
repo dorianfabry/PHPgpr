@@ -21,5 +21,5 @@ class pointDeVentesDAO {
     $resultats=$sth->fetchAll(PDO::FETCH_CLASS,'pointDeVentes');
     return $resultats[0];
   }
-
+}
   ?>

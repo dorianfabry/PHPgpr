@@ -6,7 +6,7 @@ require_once('pointDeVentesDAO.class.php');
 $config = parse_ini_file('../config/config.ini');
 
 // Creation de l'instace DAO
-$pointDeVentes = new pointDeVentesDAO($config['database_path']);
+$pointDeVentes = new pointDeVentesDAO($config['databasepointdeventes_path']);
 
 $m = $pointDeVentes->get(1);
 var_dump($m);
