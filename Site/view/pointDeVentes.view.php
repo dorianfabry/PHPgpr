@@ -6,9 +6,8 @@
   </head>
   <body>
     <div class="">
-      <?php for($i = 0 ; i <5;$i++){ ?>
-             <p> <?=$intitu[$i]?> /</p>
-           </div>
+      <?php for($i = 0 ; $i <5;$i++){ ?>
+             <p><?=$intitu[$i];?></p>
       <?php } ?>
     </div>
   </body>
