@@ -24,9 +24,8 @@ $config = parse_ini_file('../config/config.ini');
 $articles = new articleDAO($config['databasearticle_path']);
 
 // Récupération de l'objet article correspondant à l'id
-$id="1";
+$id=1;
 $res = $articles->getArticle($id); // Creation d'objet avec FETCH_CLASS
-$
 
 
 // Sans Framework

@@ -9,7 +9,6 @@
 
 
       <?php
-
       foreach ($produits as $article) {
            ?>
            <div class="container-fluid">
