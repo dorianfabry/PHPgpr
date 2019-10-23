@@ -33,19 +33,21 @@ class Article
 
   public function load(){
   $taball = NULL;
-  $dh = fopen("DATA/articleDB.txt","r");
+  $dh = fopen("../model/DATA/articleDB.txt","r");
   for ($i=0; $i < 10; $i++) {
     $tab = explode('|',rtrim(fgets($dh)),200); //convertis la chaine en tableau
     $pointDeVentes = NEW Article($tab[0],$tab[1],$tab[2],$tab[3],$tab[4],$tab[5]);
     $taball[$tab[0]] = $tab;
   }
   return $taball;
-  var_dump($taball);
 }
 
 }
 
-
+//test
+$art = new Article();
+$tab = $art->load();
+var_dump($tab);
 
 
 
