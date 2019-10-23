@@ -7,6 +7,11 @@ $produits = $article->load();
 $database = new articleDAO('article.db');
 $database->get(0,'intitule');//test de la database
 
+include("../framework/View.class.php");
+$view = new View("produit.view.php");
+
+$view->photo ="../view/img_sites/Produit".$produits->photo;
+$view->show();
 
 
 
