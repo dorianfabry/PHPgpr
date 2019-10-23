@@ -6,16 +6,6 @@ $article = new Article();
 $produits = $article->load();
 //var_dump($produits); TEST fonctionne vecteur d'article dans la créaton d'objet
 
-//$database = new articleDAO('../model/DATA/article.db');
-//$database->get(0,'intitule');//test de la database
-//pointDeVentes
-require_once('../model/pointDeVentes.class.php');
-require_once('../model/pointDeVentesDAO.class.php');
-$pdv = new pointDeVentes();
-$pdvs = $pdv->loadPointDeVentesDB();
-var_dump($pdvs);//Affiche vecteur de plusieurs pdvs sans la création d'objet
-
-
 //----------------Partie Rémi view------------------
 
 //include("../framework/View.class.php");
@@ -36,6 +26,7 @@ $articles = new articleDAO($config['databasearticle_path']);
 // Récupération de l'objet article correspondant à l'id
 $id="1";
 $res = $articles->getArticle($id); // Creation d'objet avec FETCH_CLASS
+$
 
 
 // Sans Framework
