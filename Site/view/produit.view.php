@@ -10,10 +10,10 @@
 
       <?php
 
-      foreach ($article as $produit) {
+      foreach ($produits as $article) {
            ?>
            <div class="container-fluid">
-             <img src="<?php  $config['image_path'] .$produit->photo ?>" alt="">
+             <img src="<?php  $config['image_path'] .$article->photo ?>" alt="">
            </div>
 
 
