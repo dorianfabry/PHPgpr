@@ -25,6 +25,9 @@
       case 'prix':
       $recherche = $this->db->query("SELECT * FROM article WHERE prix<=$value ");
       break;
+      case 'reference':
+      $recherche = $this->db->query("SELECT * FROM article WHERE reference='$value'");
+      break;
 
     }
     $resultats=$recherche->fetchAll(PDO::FETCH_CLASS,'Article');

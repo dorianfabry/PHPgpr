@@ -45,9 +45,9 @@ class Article
 }
 
 //test
-$art = new Article();
-$tab = $art->load();
-var_dump($tab);
+//$art = new Article();
+//$tab = $art->load();
+//var_dump($tab);
 
 
 
