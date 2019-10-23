@@ -10,3 +10,7 @@ CREATE TABLE POINTDEVENTES (
 id numeric(3),
 intitule string,
 adresse string);
+
+CREATE TABLE ARTICLEAUNPOINTDEVENTES (
+idpointdeventes numeric(3),
+idarticle numeric(3));
