@@ -13,7 +13,7 @@
       foreach ($produits as $article) {
            ?>
            <div class="container-fluid">
-             <?php  echo "$article->photo";?>
+             <?php  echo $article->photo;?>
              <img src="../view/img_sites/Produit/<?php$article->photo ?>" alt="">
            </div>
 

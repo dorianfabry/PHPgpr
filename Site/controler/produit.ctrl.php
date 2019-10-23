@@ -4,7 +4,11 @@ require_once('../model/articleDAO.class.php');
 $article = new Article();
 $produits = $article->load();
 
+include("../framework/View.class.php");
+$view = new View("produit.view.php");
 
+$view->photo ="../view/img_sites/Produit".$produits->photo;
+$view->show();
 
 
 
