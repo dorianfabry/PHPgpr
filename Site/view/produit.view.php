@@ -13,8 +13,8 @@
       foreach ($produits as $article) {
            ?>
            <div class="container-fluid">
-             <?php echo "$config['image_path'] .$article->photo";  ?>
-             <img src="<?php  $config['image_path'] .$article->photo ?>" alt="">
+             <?php  echo "$article->photo";?>
+             <img src="../view/img_sites/Produit/<?php$article->photo ?>" alt="">
            </div>
 
 
