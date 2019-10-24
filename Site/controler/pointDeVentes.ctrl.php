@@ -6,7 +6,7 @@ require_once('../model/pointDeVentesDAO.class.php');
 $config = parse_ini_file('../config/config.ini');
 
 // Creation de l'instance DAO
-$pointsDeVentes = new pointDeVentesDAO($config['databasepointdeventes_path']);
+$pointsDeVentes = new pointDeVentesDAO($config['database_path']);
 
 // Récupération de l'objet article correspondant à l'id
 $id=1;

@@ -21,7 +21,7 @@ $produits = $article->load();
 $config = parse_ini_file('../config/config.ini');
 
 // Creation de l'instance DAO
-$articles = new articleDAO($config['databasearticle_path']);
+$articles = new articleDAO($config['database_path']);
 
 // Récupération de l'objet article correspondant à l'id
 $id=1;
