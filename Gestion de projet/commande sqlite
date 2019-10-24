@@ -1,3 +1,4 @@
 .read lefichier.sql // fait les commandes sql dans la base
 .separator |
 .import lefichierDB.txt latable // creer les objet dans la table a partir du fichier
+j
