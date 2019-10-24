@@ -6,9 +6,10 @@
   </head>
   <body>
            <?php $cover = $config['image_path'].'/'.$article->getPhoto();?>
+            <a href="../controler/produit.ctrl.php"> <img src="img_sites/flecheRetour.png" alt=""> </a>
              <h1><?=$article->getIntitule()?>  </h1>
              <img src="<?=$cover?>" alt="">
              <p><?=$article->getDescription()?></p>
-             <p><?=$article->getPrix()?></p>
+             <p><?=$article->getPrix()?> €</p>
   </body>
 </html>
