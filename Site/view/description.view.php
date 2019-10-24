@@ -11,7 +11,6 @@
              <img src="<?=$cover?>" alt="">
              <p><?=$article->getDescription()?></p>
              <p><?=$article->getPrix()?></p>
-             <a href="description.view.php?id=<?php echo $article->getReference() ?>"><img src="<?=$cover?>" alt=""></a>
             <?php    }   ?>
   </body>
 </html>
