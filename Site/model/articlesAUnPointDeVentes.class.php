@@ -5,14 +5,14 @@
 class articlesAUnPointDeVentes
 {
 
-  public $idPointDeVentes;
-  public $idArticles;
+  public $idpointdeventes;
+  public $iddesarticles;
 
   public function getIdPointDeVentes(){
-    return $this->idPointDeVentes;
+    return $this->idpointdeventes;
   }
   public function getIdArticles(){
-    return $this->idArticles;
+    return $this->idpointdeventes;
   }
 }
 

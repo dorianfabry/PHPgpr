@@ -1,4 +1,4 @@
-<?php class articleDAO {
+<?php class articlesAUnPointDeVentesDAO {
   private $db;
 
   public function __construct($path){
@@ -14,7 +14,7 @@
     }
   }
 
-  function getArticlesAUnPointDeVentes(){ //Retourne toutes les lignes 
+  function getArticlesAUnPointDeVentes(){ //Retourne toutes les lignes
     $req = "SELECT * FROM articlesaunpointdeventes";
     $sth=$this->db->query($req);
      $res = $sth->fetchAll(PDO::FETCH_CLASS,'articlesAUnPointDeVentes');

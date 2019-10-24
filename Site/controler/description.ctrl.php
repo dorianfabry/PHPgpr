@@ -10,8 +10,10 @@ $config = parse_ini_file('../config/config.ini');
   $articles = new articleDAO($config['database_path']);
   $article = $articles->getUnArticle($id);
 
-  $articlesaunpdv = new articlesAUnPointDeVentes($config['database_path']);
-  $lesarticlesdetoutlespdvs = $articlesaunpdv->getArticlesAUnPointDeVentes();
+  //require_once('../model/articlesAUnPointDeVentes.class.php');
+  //require_once('../model/articlesAUnPointDeVentesDAO.class.php');
+  //$articlesaunpdv = new articlesAUnPointDeVentes($config['database_path']);
+  //$lesarticlesdetoutlespdvs = $articlesaunpdv->getArticlesAUnPointDeVentes();
 
 
 include('../view/description.view.php');
