@@ -34,11 +34,11 @@
     return $resultats;
   }
 
-  function getArticle($id){
-    $req = "SELECT * FROM article WHERE reference='$id'";
+  function getArticles(){
+    $req = "SELECT * FROM article";
     $sth=$this->db->query($req);
      $res = $sth->fetchAll(PDO::FETCH_CLASS,'Article');
-     return $res[0];
+     return $res;
   }
 }
   ?>

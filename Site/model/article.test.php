@@ -8,6 +8,6 @@ $config = parse_ini_file('../config/config.ini');
 // Creation de l'instace DAO
 $articles = new articleDAO($config['database_path']);
 
-$m = $articles->getArticle(1);
+$m = $articles->getArticles();
 var_dump($m);
 ?>
