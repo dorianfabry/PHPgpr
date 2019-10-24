@@ -9,6 +9,14 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
   <title>BoomBox</title>
 </head>
+<style media="screen">
+  footer{
+    position: fixed;
+    bottom: 0px ;
+    width : 100% ;
+
+  }
+</style>
 <body>
   <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
     <a class="navbar-brand" href="#">BoomBox</a>
