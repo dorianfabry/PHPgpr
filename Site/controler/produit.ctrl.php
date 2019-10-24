@@ -26,6 +26,11 @@ if (isset($_GET['valeur'])&&isset($_GET['element'])){
   $value=$_GET['valeur'];
   $elem = $_GET['element'];
   $articlesvoulus = $articles->get($value,$elem);
+<<<<<<< HEAD
+=======
+}else{
+    $articlesvoulus =$articles;
+>>>>>>> e1bad26332889df5428f56e481d39a8d1b993f71
 }
 
 // Récupération de l'objet article correspondant à l'id
