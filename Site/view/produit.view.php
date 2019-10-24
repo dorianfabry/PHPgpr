@@ -5,12 +5,10 @@
     <title></title>
   </head>
   <body>
-
-      <?php
-       foreach($articlesvoulus as $exemple){
-        $cover = $config['image_path'].'/'.$exemple->getPhoto();?>
-        <a href="description.view.php?id=<?php echo $exemple->getReference() ?>"><img src="<?=$cover?>" alt=""></a>
-       <?php    }   ?>
-
+    <?php
+     foreach($articlesvoulus as $exemple){
+      $cover = $config['image_path'].'/'.$exemple->getPhoto();?>
+      <a href="description.view.php?id=<?php echo $exemple->getReference() ?>"><img src="<?=$cover?>" alt=""></a>
+     <?php    }   ?>
   </body>
 </html>

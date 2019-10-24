@@ -10,6 +10,6 @@ $articles = new articleDAO($config['database_path']);
 
 $m = $articles->getArticles();
 var_dump($m);
-$n = $articles->getUnArticle(8);
-var_dump($n);
+//$n = $articles->getUnArticle(8);
+//var_dump($n);
 ?>
