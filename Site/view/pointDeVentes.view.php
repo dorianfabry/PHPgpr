@@ -7,7 +7,7 @@
   <body>
     <div class="">
       <?php for($i = 0 ; $i <5;$i++){ ?>
-             <p><?=$res[$i]->getIntitule();?></p>
+             <p><?=$allpdv[$i]->getLogo();?></p>
       <?php } ?>
     </div>
   </body>

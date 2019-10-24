@@ -15,11 +15,11 @@ class pointDeVentesDAO {
     }
   }
 
-  public function get($id){
-    $req = "SELECT * FROM POINTDEVENTES WHERE id=$id;";
+  public function get(){
+    $req = "SELECT * FROM POINTDEVENTES;";
     $sth=$this->db->query($req);
     $resultats=$sth->fetchAll(PDO::FETCH_CLASS,'pointDeVentes');
-    return $resultats[0];
+    return $resultats;
   }
 }
   ?>

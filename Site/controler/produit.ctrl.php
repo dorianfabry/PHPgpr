@@ -25,7 +25,7 @@ $articles = new articleDAO($config['database_path']);
 if (isset($_GET['valeur'])&&isset($_GET['element'])){
   $value=$_GET['valeur'];
   $elem = $_GET['element'];
-  $articlesvoulus = $articles->get($value,$elem)
+  $articlesvoulus = $articles->get($value,$elem);
 }
 
 // Récupération de l'objet article correspondant à l'id

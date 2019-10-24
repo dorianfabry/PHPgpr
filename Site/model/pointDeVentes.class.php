@@ -8,7 +8,7 @@ class pointDeVentes
   public $id;
   public $intitule;
   public $adresse;
-  public $articles;
+  public $logo;
 
 
   public function getIntitule(){
@@ -23,8 +23,8 @@ class pointDeVentes
     return $this->adresse;
   }
 
-  public function getArticles(){
-    return $this->articles;
+  public function getLogo(){
+    return $this->logo;
   }
 
   public function loadPointDeVentesDB(){

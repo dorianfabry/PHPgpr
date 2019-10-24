@@ -8,6 +8,6 @@ $config = parse_ini_file('../config/config.ini');
 // Creation de l'instace DAO
 $pointDeVentes = new pointDeVentesDAO($config['database_path']);
 
-$m = $pointDeVentes->get(1);
+$m = $pointDeVentes->get();
 var_dump($m);
 ?>
