@@ -6,8 +6,8 @@
   </head>
   <body>
 
-      <?php for($i = 0 ; $i <10;$i++){ ?>
-        <img src="<?=$cover?>" alt="">
+      <?php foreach($articlesvoulus as $exemple){ ?>
+          <img src="<?=$cover?>" alt="">
        <?php    }   ?>
 
   </body>
