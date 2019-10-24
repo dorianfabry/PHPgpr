@@ -21,17 +21,15 @@ require_once('../model/articleDAO.class.php');
 $config = parse_ini_file('../config/config.ini');
 
 // Creation de l'instance DAO
+$articlesvoulus = NULL;
+
 $articles = new articleDAO($config['database_path']);
 if (isset($_GET['valeur'])&&isset($_GET['element'])){
   $value=$_GET['valeur'];
   $elem = $_GET['element'];
   $articlesvoulus = $articles->get($value,$elem);
-<<<<<<< HEAD
-=======
-
->>>>>>> e3c58ef1c5e4cc989ea667da3d0789e8aa130e1f
 }else{
-    $articlesvoulus =$articles;
+    $articlesvoulus =$articles->getArticles();
 }
 
 // Récupération de l'objet article correspondant à l'id
