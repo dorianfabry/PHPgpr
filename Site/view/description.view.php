@@ -5,12 +5,10 @@
     <title></title>
   </head>
   <body>
-           <?php
-             $cover = $config['image_path'].'/'.$article->getPhoto();?>
+           <?php $cover = $config['image_path'].'/'.$article->getPhoto();?>
              <h1><?=$article->getIntitule()?>  </h1>
              <img src="<?=$cover?>" alt="">
              <p><?=$article->getDescription()?></p>
              <p><?=$article->getPrix()?></p>
-            <?php    }   ?>
   </body>
 </html>
