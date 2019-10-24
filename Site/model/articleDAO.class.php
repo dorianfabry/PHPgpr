@@ -26,7 +26,7 @@
       $recherche = $this->db->query("SELECT * FROM article WHERE prix<=$value ");
       break;
       case 'reference':
-      $recherche = $this->db->query("SELECT * FROM article WHERE reference='$value'");
+      $recherche = $this->db->query("SELECT * FROM article WHERE reference=$value");
       break;
 
     }
@@ -39,6 +39,13 @@
     $sth=$this->db->query($req);
      $res = $sth->fetchAll(PDO::FETCH_CLASS,'Article');
      return $res;
+  }
+
+  function getUnArticle($id){
+    $req = "SELECT * FROM article WHERE reference=$id;";
+    $sth=$this->db->query($req);
+     $res = $sth->fetchAll(PDO::FETCH_CLASS,'Article');
+     return $res[0];
   }
 }
   ?>
