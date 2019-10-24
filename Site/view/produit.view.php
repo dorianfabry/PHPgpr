@@ -5,19 +5,9 @@
     <title></title>
   </head>
   <body>
-      <?php include '../controler/produit.ctrl.php' ?>
 
-
-      <?php
-      foreach ($produits as $article) {
-           ?>
-           <div class="container-fluid">
-             <img src="<?=$cover?>" width="200" height="200" alt="produit">
-           </div>
-
-
-
-
+      <?php for($i = 0 ; $i <10;$i++){ ?>
+        <img src="<?=$cover?>" alt="">
        <?php    }   ?>
 
   </body>

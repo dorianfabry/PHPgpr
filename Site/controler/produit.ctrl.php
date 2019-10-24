@@ -2,8 +2,8 @@
 //ARTICLE
 require_once('../model/article.class.php');
 require_once('../model/articleDAO.class.php');
-$article = new Article();
-$produits = $article->load();
+//$article = new Article();
+//$produits = $article->load();
 //var_dump($produits); TEST fonctionne vecteur d'article dans la créaton d'objet
 
 //----------------Partie Rémi view------------------
