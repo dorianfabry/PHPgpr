@@ -28,7 +28,10 @@ if (isset($_GET['valeur'])&&isset($_GET['element'])){
   $value=$_GET['valeur'];
   $elem = $_GET['element'];
   $articlesvoulus = $articles->get($value,$elem);
+<<<<<<< HEAD
 
+=======
+>>>>>>> 8ce6ff1122ac3fb231d6a865f31c44cfa4da04dc
 }else{
     $articlesvoulus =$articles->getArticles();
 }
