@@ -2,7 +2,7 @@
   private $db;
 
   public function __construct($path){
-    $database ='sqlite:'.$path.'/article.db';
+    $database ='sqlite:'.$path.'/boombox.db';
     try{
       $this->db = new PDO($database);
       //var_dump($database);
@@ -37,9 +37,7 @@
   function getArticle($id){
     $req = "SELECT * FROM article WHERE reference='$id'";
     $sth=$this->db->query($req);
-     var_dump($sth);
      $res = $sth->fetchAll(PDO::FETCH_CLASS,'Article');
-     var_dump($res);exit(0);
      return $res[0];
   }
 }
