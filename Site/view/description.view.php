@@ -11,5 +11,7 @@
              <img src="<?=$cover?>" alt="">
              <p><?=$article->getDescription()?></p>
              <p><?=$article->getPrix()?> €</p>
+             <h2>Les points de ventes</h2>
+             
   </body>
 </html>

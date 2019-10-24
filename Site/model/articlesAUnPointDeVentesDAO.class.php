@@ -21,4 +21,9 @@
      return $res;
   }
 
+  //Il faut une fonction pour que avec le deuxieme attribut creer un tableau d'id produits
+  // correspondants au point de ventes ensuite il faut que pour 1 produits on ai les points
+  // de ventes disponibles (recherche where id produit est dans le vecteur d'un point de
+  // de ventes alors on affiche le pdv )
+
 }
