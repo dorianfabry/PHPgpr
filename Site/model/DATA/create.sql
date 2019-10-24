@@ -10,7 +10,8 @@ photo string);
 CREATE TABLE POINTDEVENTES (
 id numeric(3),
 intitule string,
-adresse string);
+adresse string,
+logo string);
 
 CREATE TABLE ARTICLEAUNPOINTDEVENTES (
 idpointdeventes numeric(3),

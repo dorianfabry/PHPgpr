@@ -9,12 +9,13 @@ $config = parse_ini_file('../config/config.ini');
 $pointsDeVentes = new pointDeVentesDAO($config['database_path']);
 
 // Récupération de l'objet article correspondant à l'id
-$id=1;
-$res = array($pointsDeVentes->get($id),$pointsDeVentes->get($id+1),$pointsDeVentes->get($id+2)
-,$pointsDeVentes->get($id+3),$pointsDeVentes->get($id+4));
+
+foreach ($i=0; $i < $pointDeVentes.size() ; $i++){
+$res[$i] = $pdv->get($i);
+}
+
 
 // Sans Framework
-
 include('../view/pointDeVentes.view.php');
 
 ?>
