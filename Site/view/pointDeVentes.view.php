@@ -7,7 +7,7 @@
   <body>
     <div class="">
       <?php for($i = 0 ; $i <5;$i++){ ?>
-             <p><?=$intitu[$i];?></p>
+             <p><?=$res[$i]->getIntitule();?></p>
       <?php } ?>
     </div>
   </body>
