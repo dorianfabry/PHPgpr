@@ -29,12 +29,12 @@ if (isset($_GET['valeur'])&&isset($_GET['element'])){
 }
 
 // Récupération de l'objet article correspondant à l'id
-$id=1;
-$res = $articles->getArticle($id); // Creation d'objet avec FETCH_CLASS
+//$id=1;
+//$res = $articles->getArticle($id); // Creation d'objet avec FETCH_CLASS
 
 
 // Sans Framework
-$cover = $config['image_path'].'/'.$res->getPhoto();
+//$cover = $config['image_path'].'/'.$res->getPhoto();
 include('../view/produit.view.php');
 
 

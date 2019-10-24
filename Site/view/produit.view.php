@@ -6,7 +6,8 @@
   </head>
   <body>
 
-      <?php for($i = 0 ; $i <10;$i++){ ?>
+      <?php foreach($articlesvoulus as $exemple){ ?>
+        $cover = $config['image_path'].'/'.$exemple->getPhoto();
         <a href="description.view.php?id=<?php echo $id ?>"><img src="<?=$cover?>" alt=""></a>
        <?php    }   ?>
 
