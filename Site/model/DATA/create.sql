@@ -13,6 +13,6 @@ intitule string,
 adresse string,
 logo string);
 
-CREATE TABLE ARTICLEAUNPOINTDEVENTES (
+CREATE TABLE ARTICLESAUNPOINTDEVENTES (
 idpointdeventes numeric(3),
-idarticle numeric(3));
+iddesarticles string);
