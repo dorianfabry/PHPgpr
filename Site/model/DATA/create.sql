@@ -1,9 +1,10 @@
 CREATE TABLE ARTICLE (
+reference numeric(3),
 intitule string,
 description string,
 type string,
 prix float,
-reference string,
+
 photo string);
 
 CREATE TABLE POINTDEVENTES (
