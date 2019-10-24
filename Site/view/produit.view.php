@@ -7,7 +7,7 @@
   <body>
 
       <?php for($i = 0 ; $i <10;$i++){ ?>
-        <img src="<?=$cover?>" alt="">
+        <a href="description.view.php?id=<?php echo $id ?>"><img src="<?=$cover?>" alt=""></a>
        <?php    }   ?>
 
   </body>
