@@ -11,8 +11,8 @@ $config = parse_ini_file('../config/config.ini');
   $article = $articles->getUnArticle($id);
 
 
-  require_once('articlesAUnPointDeVentes.class.php');
-  require_once('articlesAUnPointDeVentesDAO.class.php');
+  require_once('../model/articlesAUnPointDeVentes.class.php');
+  require_once('../model/articlesAUnPointDeVentesDAO.class.php');
   $articlesaunpdv = new articlesAUnPointDeVentesDAO($config['database_path']);
   $alllatableinter = $articlesaunpdv->getArticlesAUnPointDeVentes();
 
