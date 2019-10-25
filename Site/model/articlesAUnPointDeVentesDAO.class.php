@@ -21,6 +21,14 @@
      return $res;
   }
 
+function getLesIdArticles($id){ //retourne un tableau d'id d'articles du pdv
+  $req = "SELECT * FROM articlesaunpointdeventes WHERE idpointdeventes=$id;";
+  $sth=$this->db->query($req);
+  $res = $sth->fetchAll(PDO::FETCH_CLASS,'articlesAUnPointDeVentes');
+  $tabidarticles = explode(',',$res[0]->getIdArticles());
+  return $tabidarticles;  
+}
+
   //Il faut une fonction pour que avec le deuxieme attribut creer un tableau d'id produits
   // correspondants au point de ventes ensuite il faut que pour 1 produits on ai les points
   // de ventes disponibles (recherche where id produit est dans le vecteur d'un point de

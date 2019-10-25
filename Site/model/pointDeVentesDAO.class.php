@@ -21,5 +21,12 @@ class pointDeVentesDAO {
     $resultats=$sth->fetchAll(PDO::FETCH_CLASS,'pointDeVentes');
     return $resultats;
   }
+  public function getLepdv($id){
+    $req = "SELECT * FROM POINTDEVENTES WHERE id=$id;";
+    $sth=$this->db->query($req);
+    $resultats=$sth->fetchAll(PDO::FETCH_CLASS,'pointDeVentes');
+    return $resultats[0];
+  }
+
 }
   ?>

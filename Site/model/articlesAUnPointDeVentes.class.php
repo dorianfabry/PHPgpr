@@ -12,7 +12,7 @@ class articlesAUnPointDeVentes
     return $this->idpointdeventes;
   }
   public function getIdArticles(){
-    return $this->idpointdeventes;
+    return $this->iddesarticles;
   }
 }
 

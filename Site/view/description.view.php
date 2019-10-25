@@ -12,6 +12,20 @@
              <p><?=$article->getDescription()?></p>
              <p><?=$article->getPrix()?> €</p>
              <h2>Les points de ventes</h2>
-             
+             <div class="pdv">
+               <?php
+               $idarticle = $article->getReference(); //recupere id de l'article
+               foreach($alllatableinter as $articlesaunpdvobj){
+                 if (in_array("$idarticle", $articlesaunpdv->getLesIdArticles($articlesaunpdvobj->getIdPointDeVentes()))) {
+                   $pdvact = $pointsDeVentes->getLepdv($articlesaunpdvobj->getIdPointDeVentes());
+                   $logo = $pdvact->getLogo();?>
+                   <img src="<?=$logo?>" alt="">
+                <?php }
+               }
+               ?>
+
+             </div>
+
+
   </body>
 </html>
