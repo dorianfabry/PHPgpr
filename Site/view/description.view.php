@@ -6,7 +6,7 @@
   </head>
   <body>
            <?php $cover = $config['image_path'].'/'.$article->getPhoto();?>
-            <a href="../controler/produit.ctrl.php"> <img src="img_sites/flecheRetour.png" alt="retour" width='50' heigth='50'> </a>
+            <a href="../controler/produit.ctrl.php"> <img src="../view/img_sites/flecheRetour.png" alt="retour" width='50' heigth='50'> </a>
              <h1><?=$article->getIntitule()?></h1>
              <img src="<?=$cover?>" alt="">
              <p><?=$article->getDescription()?></p>
@@ -19,7 +19,7 @@
                  if (in_array("$idarticle", $articlesaunpdv->getLesIdArticles($articlesaunpdvobj->getIdPointDeVentes()))) {
                    $pdvact = $pointsDeVentes->getLepdv($articlesaunpdvobj->getIdPointDeVentes());
                    $logo = $pdvact->getLogo();?>
-                   <img src="<?=$logo?>" alt="">
+                   <img src="../view/img_sites/PointDeVentes/<?=$logo?>" width="150" height="150" alt="">
                 <?php }
                }
                ?>
