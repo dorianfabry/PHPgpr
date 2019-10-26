@@ -10,6 +10,35 @@
   <title>BoomBox</title>
 </head>
   <body>
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+      <a class="navbar-brand" href="#">BoomBox</a>
+      <ul class="navbar-nav">
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarCasque" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Casque
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarCasque">
+            <a class="dropdown-item" href="../controler/produit.ctrl.php?valeur=ecouteursf&element=type">Ecouteurs sans fil</a>
+            <a class="dropdown-item" href="../controler/produit.ctrl.php?valeur=casque&element=type">Circum-auriculaires</a>
+            <a class="dropdown-item" href="../controler/produit.ctrl.php?valeur=casque&element=type">Anti-Bruit</a>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarEnceintes" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Enceintes
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarEnceintes">
+            <a class="dropdown-item" href="../controler/produit.ctrl.php?valeur=partybox&element=type">PartyBox</a>
+            <a class="dropdown-item" href="../controler/produit.ctrl.php?valeur=barredeson&element=type">Barres de son</a>
+            <a class="dropdown-item" href="../controler/produit.ctrl.php?valeur=enceinteportable&element=type">Enceintes Portables</a>
+        </li>
+
+        <li class="nav-item"><a class="nav-link" href="#">Histoires</a></li>
+
+        <li class="nav-item"><a class="nav-link" href="#">Assistance</a></li>
+      </ul>
+    </nav>
     <?php
      foreach($articlesvoulus as $exemple){
       $cover = $config['image_path'].'/'.$exemple->getPhoto();?>
