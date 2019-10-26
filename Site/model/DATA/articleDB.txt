@@ -1,10 +1,15 @@
-1|JBL Pulse 4|Enceinte Bluetooth portable|enceinte|249.00|JBL_PULSE4_HERO_BLACK.jpg
-2|JBL Boombox|Enceinte Bluetooth portable|enceinte|499.00|JBL_Boombox_Black_Hero.jpg
-3|JBL Pulse 3|Enceinte Bluetooth portable|enceinte|249.00|JBL_PULSE3_HERO_BLACK.jpg
-4|JBL GO 2|Enceinte Bluetooth portable|enceinte|34.99|JBL_Go2_Hero_Midnight_Black.jpg
-5|JBL Xtreme 2|Enceinte Bluetooth portable|enceinte|299.00|Extreme2_Hero_ForrestGreen.jpg
+1|JBL Pulse 4|Enceinte Bluetooth portable|enceinteportable|249.00|JBL_PULSE4_HERO_BLACK.jpg
+2|JBL Boombox|Enceinte Bluetooth portable|enceinteportable|499.00|JBL_Boombox_Black_Hero.jpg
+3|JBL Pulse 3|Enceinte Bluetooth portable|enceinteportable|249.00|JBL_PULSE3_HERO_BLACK.jpg
+4|JBL GO 2|Enceinte Bluetooth portable|enceinteportable|34.99|JBL_Go2_Hero_Midnight_Black.jpg
+5|JBL Xtreme 2|Enceinte Bluetooth portable|enceinteportable|299.00|Extreme2_Hero_ForrestGreen.jpg
 6|JBL LIVE 650BTNC|Casque circum-auriculaire|casque|199.00|JBL_LIVE650BTNC_Hero_Black.jpg
 7|JBL LIVE 500BT|Casque circum-auriculaire|casque|149.00|JBL_LIVE500BT_Hero_Black.jpg
-8|JBL LIVE 300TWS|Ecouteurs sans_fil|casque|169.00|JBL_LIVE 300TWS_Black_with Charging Case.jpg
-9|JBL REFLECT FLOW|Ecouteurs sans_fil|casque|149.00|JBL_REFLECT_FLOW_Hero_Black.jpg
-10|JBL LIVE 220BT|Ecouteurs sans_fil|casque|79.99|JBL_LIVE220BT_Hero_Black.jpg
+8|JBL LIVE 300TWS|Ecouteurs sans_fil|ecouteursf|169.00|JBL_LIVE 300TWS_Black_with Charging Case.jpg
+9|JBL REFLECT FLOW|Ecouteurs sans_fil|ecouteursf|149.00|JBL_REFLECT_FLOW_Hero_Black.jpg
+10|JBL LIVE 220BT|Ecouteurs sans_fil|ecouteursf|79.99|JBL_LIVE220BT_Hero_Black.jpg
+11|Bar 2.0 All-in-One|Barre de son 2.0 canaux compacte|barredeson|179.99|JBL_Bar_2.0_All-On-One_Hero_1605x1605.jpeg
+12|JBL Bar 5.1 Surround|Barre de son 5.1 canaux à technologie audio MultiBeam™|barredeson|599.00|JBL_Bar_5.1 Surround_Hero_1605x1605.jpeg
+13|JBL PartyBox 100|Enceinte portable Bluetooth de soirée avec effets lumineux|partybox|299.00|JBL_PartyBox_100_Hero_0057.jpg
+14|JBL PartyBox 200|Enceinte portable Bluetooth de soirée avec effets lumineux|partybox|379.00|JBL_Party_Box_200HERO.jpg
+15|JBL PartyBox 300|Enceinte portable Bluetooth de soirée avec effets lumineux|partybox|449.00|JBL_Party_Box_300_HERO.jpg
