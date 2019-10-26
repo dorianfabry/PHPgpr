@@ -28,7 +28,7 @@ if (isset($_GET['valeur'])&&isset($_GET['element'])){
   $value=$_GET['valeur'];
   $elem = $_GET['element'];
   $articlesvoulus = $articles->get($value,$elem);//value = casque et elem = type;
-else{
+}else{
     $articlesvoulus =$articles->getArticles();
 }
 
