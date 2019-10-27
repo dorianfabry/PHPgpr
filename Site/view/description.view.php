@@ -47,14 +47,15 @@
            <div class="all">
 
 
-           <div class="gauche">
-             <img src="<?=$cover?>" alt="" width="400" height="400">
+           <div class="gauche" height="80%">
+             <img src="<?=$cover?>" alt="" width="350" height="350">
            </div>
 
            <div class="droite">
              <p><?=$article->getDescription()?></p>
-             <p><?=$article->getPrix()?> €</p>
-             <h2>Les points de ventes</h2>
+             <p><?=$article->getPrix()?> € pièce</p>
+             <h3>Les points de ventes</h3>
+             <p>Choissisez votre revendeur :</p>
              <div class="pdv">
                <?php
                $idarticle = $article->getReference(); //recupere id de l'article
@@ -62,8 +63,13 @@
                  if (in_array("$idarticle", $articlesaunpdv->getLesIdArticles($articlesaunpdvobj->getIdPointDeVentes()))) {
                    $pdvact = $pointsDeVentes->getLepdv($articlesaunpdvobj->getIdPointDeVentes());
                    $logo = $pdvact->getLogo();?>
-                   <img src="../view/img_sites/PointDeVentes/<?=$logo?>" alt="" width="100" height="100">
+                   <?php
+                   if ($pdvact->getIntitule()=="Materiel.net"){ ?>
+                     <a class="lepdv" href="https://www.<?=$pdvact->getIntitule()?>"> <img src="../view/img_sites/PointDeVentes/<?=$logo?>" alt="" width="100" height="100"> </a>
+                  <?php } else{?>
+                  <a class="lepdv" href="https://www.<?=$pdvact->getIntitule()?>.com"> <img src="../view/img_sites/PointDeVentes/<?=$logo?>" alt="" width="100" height="100"> </a>
                 <?php }
+                 }
                }
                ?>
              </div>
