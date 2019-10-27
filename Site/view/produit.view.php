@@ -45,10 +45,10 @@
      foreach($articlesvoulus as $exemple){
       $cover = $config['image_path'].'/'.$exemple->getPhoto();?>
       <div class="produit">
-        <img src="<?=$cover?>" alt="">
+        <img src="<?=$cover?>" alt="" class="photo">
         <p><?php echo $exemple->getIntitule() ?></p>
         <p class="prix"><?php echo $exemple->getPrix() ?> € pièce </p>
-        <a class="liendescription" href="../controler/description.ctrl.php?id=<?php echo $exemple->getReference() ?>">PLUS D'INFOS</a>
+<a class="lien" href="../controler/description.ctrl.php?id=<?php echo $exemple->getReference() ?>"><p class="lien">PLUS D'INFOS</p></a>
      </div>
      <?php    }   ?>
      </div>
