@@ -42,8 +42,7 @@
     </nav>
            <?php $cover = $config['image_path'].'/'.$article->getPhoto();?>
 
-           <h1><?=$article->getIntitule()?></h1>
-           <a class="flecheretour" href="../controler/produit.ctrl.php"> <img src="../view/img_sites/flecheRetour.png" alt="retour" width='50' heigth='50'> </a>
+           <h1><a class="flecheretour" href="../controler/produit.ctrl.php"> <img src="../view/img_sites/flecheRetour.png" alt="retour" width='50' heigth='50'> </a> <?=$article->getIntitule()?> </h1>
            <div class="all">
 
 
