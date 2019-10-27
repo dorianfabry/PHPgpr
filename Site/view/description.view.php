@@ -62,7 +62,7 @@
                  if (in_array("$idarticle", $articlesaunpdv->getLesIdArticles($articlesaunpdvobj->getIdPointDeVentes()))) {
                    $pdvact = $pointsDeVentes->getLepdv($articlesaunpdvobj->getIdPointDeVentes());
                    $logo = $pdvact->getLogo();?>
-                   <img src="../view/img_sites/PointDeVentes/<?=$logo?>" alt="">
+                   <img src="../view/img_sites/PointDeVentes/<?=$logo?>" alt="" width="100" height="100">
                 <?php }
                }
                ?>
