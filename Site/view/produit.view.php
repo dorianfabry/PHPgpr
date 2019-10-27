@@ -39,10 +39,17 @@
         <li class="nav-item"><a class="nav-link" href="#">Assistance</a></li>
       </ul>
     </nav>
+    <div class="produits">
     <?php
      foreach($articlesvoulus as $exemple){
       $cover = $config['image_path'].'/'.$exemple->getPhoto();?>
-      <a href="../controler/description.ctrl.php?id=<?php echo $exemple->getReference() ?>"><img src="<?=$cover?>" alt=""></a>
+      <div class="produit">
+        <img src="<?=$cover?>" alt="">
+        <p><?php echo $exemple->getIntitule() ?></p>
+        <p class="prix"><?php echo $exemple->getPrix() ?> € pièce </p>
+        <a class="liendescription" href="../controler/description.ctrl.php?id=<?php echo $exemple->getReference() ?>">PLUS D'INFOS</a>
+     </div>
      <?php    }   ?>
+     </div>
   </body>
 </html>
