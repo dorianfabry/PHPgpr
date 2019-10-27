@@ -55,7 +55,7 @@
              <p><?=$article->getDescription()?></p>
              <p><?=$article->getPrix()?> € pièce</p>
              <h3>Les points de ventes</h3>
-             <p>Choissisez votre revendeur :</p>
+             <p>Choisissez votre revendeur :</p>
              <div class="pdv">
                <?php
                $idarticle = $article->getReference(); //recupere id de l'article
