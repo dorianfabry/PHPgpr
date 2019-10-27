@@ -3,6 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../view/description.view.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
@@ -40,9 +41,17 @@
       </ul>
     </nav>
            <?php $cover = $config['image_path'].'/'.$article->getPhoto();?>
-            <a href="../controler/produit.ctrl.php"> <img src="../view/img_sites/flecheRetour.png" alt="retour" width='50' heigth='50'> </a>
-             <h1><?=$article->getIntitule()?></h1>
-             <img src="<?=$cover?>" alt="">
+
+           <h1><?=$article->getIntitule()?></h1>
+           <a class="flecheretour" href="../controler/produit.ctrl.php"> <img src="../view/img_sites/flecheRetour.png" alt="retour" width='50' heigth='50'> </a>
+           <div class="all">
+
+
+           <div class="gauche">
+             <img src="<?=$cover?>" alt="" width="400" height="400">
+           </div>
+
+           <div class="droite">
              <p><?=$article->getDescription()?></p>
              <p><?=$article->getPrix()?> €</p>
              <h2>Les points de ventes</h2>
@@ -53,12 +62,15 @@
                  if (in_array("$idarticle", $articlesaunpdv->getLesIdArticles($articlesaunpdvobj->getIdPointDeVentes()))) {
                    $pdvact = $pointsDeVentes->getLepdv($articlesaunpdvobj->getIdPointDeVentes());
                    $logo = $pdvact->getLogo();?>
-                   <img src="../view/img_sites/PointDeVentes/<?=$logo?>" width="150" height="150" alt="">
+                   <img src="../view/img_sites/PointDeVentes/<?=$logo?>" alt="">
                 <?php }
                }
                ?>
-
              </div>
+           </div>
+         </div>
+
+
 
 
   </body>

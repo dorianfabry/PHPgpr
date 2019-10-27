@@ -1,0 +1,34 @@
+.flecheretour{
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+
+h1{
+  text-align: center;
+}
+
+.all{
+  display: flex;
+  justify-content: space-between;
+}
+
+.gauche{
+  text-align: center;
+  border: 0.5px solid grey;
+  border-radius: 10px;
+  margin: auto;
+  padding: inherit;
+}
+
+.droite{
+  border: 0.5px solid grey;
+  border-radius: 10px;
+  margin: auto;
+}
+
+.pdv{
+  display: flex;
+  flex-wrap: wrap;
+
+}
