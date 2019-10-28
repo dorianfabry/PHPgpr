@@ -45,11 +45,14 @@
         <button class="button button2" onclick=window.location.href='produit.ctrl.php?valeur=<?=$typeaafficher?>&element=type&tri=prixcroissant'>Du - au + cher</button>
     </fieldset>
     <form class="" action="index.html" method="post">
-      <label for="">Choisissez votre point de ventes : </label>
-      <select name="pdv" onChange="location.href=''+this.options[this.selectedIndex].value+'.php';">
+      <label for="">Filtrez par point de ventes : </label>
+      <select name="pdv" onChange="location.href=''+this.options[this.selectedIndex].value+'';">
            <option>PointDeVentes</option>
-           <option value="produit.ctrl">Orange</option>
-           <option value="produit.ctrl">LDLC</option>
+           <option value="produit.ctrl.php?pdvid=1&valeur=<?=$typeaafficher?>&element=type&tri=prixdecroissant">Fnac</option>
+           <option value="produit.ctrl.php?pdvid=2">LDLC</option>
+           <option value="produit.ctrl.php?pdvid=3">Materiel.net</option>
+           <option value="produit.ctrl.php?pdvid=4">Exalys</option>
+           <option value="produit.ctrl.php?pdvid=5">Orange</option>
       </select>
     </form>
 
