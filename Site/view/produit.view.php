@@ -40,6 +40,11 @@
         <li class="nav-item"><a class="nav-link" href="#">Assistance</a></li>
       </ul>
     </nav>
+    <fieldset>
+        <input type=button onclick=window.location.href='produit.ctrl.php?valeur=<?=$typeaafficher?>&element=type&tri=prixdecroissant'; value='tri par prix décroissant' />
+        <input type=button onclick=window.location.href='produit.ctrl.php?valeur=<?=$typeaafficher?>&element=type&tri=prixcroissant'; value='tri par prix croissant' />
+    </fieldset>
+
     <div class="produits">
     <?php
      foreach($articlesvoulus as $exemple){
