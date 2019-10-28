@@ -9,6 +9,7 @@ class pointDeVentes
   public $intitule;
   public $adresse;
   public $logo;
+  public $url;
 
 
   public function getIntitule(){
@@ -25,6 +26,10 @@ class pointDeVentes
 
   public function getLogo(){
     return $this->logo;
+  }
+
+  public function getUrl(){
+    return $this->url;
   }
 
   public function loadPointDeVentesDB(){

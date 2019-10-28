@@ -62,15 +62,9 @@
                  if (in_array("$idarticle", $articlesaunpdv->getLesIdArticles($articlesaunpdvobj->getIdPointDeVentes()))) {
                    $pdvact = $pointsDeVentes->getLepdv($articlesaunpdvobj->getIdPointDeVentes());
                    $logo = $pdvact->getLogo();?>
-                   <?php
-                   if ($pdvact->getIntitule()=="Materiel.net"){ ?>
-                     <a class="lepdv" href="https://www.<?=$pdvact->getIntitule()?>"> <img src="../view/img_sites/PointDeVentes/<?=$logo?>" alt="" width="100" height="100"> </a>
-                  <?php } else{?>
-                  <a class="lepdv" href="https://www.<?=$pdvact->getIntitule()?>.com"> <img src="../view/img_sites/PointDeVentes/<?=$logo?>" alt="" width="100" height="100"> </a>
+                  <a class="lepdv" href="<?=$pdvact->getUrl();?>"> <img src="../view/img_sites/PointDeVentes/<?=$logo?>" alt="" width="100" height="100"> </a>
                 <?php }
-                 }
-               }
-               ?>
+              }?>
              </div>
            </div>
          </div>
