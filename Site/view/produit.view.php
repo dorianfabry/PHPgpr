@@ -41,9 +41,17 @@
       </ul>
     </nav>
     <fieldset>
-        <input type=button onclick=window.location.href='produit.ctrl.php?valeur=<?=$typeaafficher?>&element=type&tri=prixdecroissant'; value='tri par prix décroissant' />
-        <input type=button onclick=window.location.href='produit.ctrl.php?valeur=<?=$typeaafficher?>&element=type&tri=prixcroissant'; value='tri par prix croissant' />
+        <button class="button button1" onclick=window.location.href='produit.ctrl.php?valeur=<?=$typeaafficher?>&element=type&tri=prixdecroissant'>Du + au - cher</button>
+        <button class="button button2" onclick=window.location.href='produit.ctrl.php?valeur=<?=$typeaafficher?>&element=type&tri=prixcroissant'>Du - au + cher</button>
     </fieldset>
+    <form class="" action="index.html" method="post">
+      <label for="">Choisissez votre point de ventes : </label>
+      <select name="pdv" onChange="location.href=''+this.options[this.selectedIndex].value+'.php';">
+           <option>PointDeVentes</option>
+           <option value="produit.ctrl">Orange</option>
+           <option value="produit.ctrl">LDLC</option>
+      </select>
+    </form>
 
     <div class="produits">
     <?php
