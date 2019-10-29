@@ -77,7 +77,9 @@
     $req = "SELECT * FROM article WHERE reference=$id AND type='$value';";
     $sth=$this->db->query($req);
      $res = $sth->fetchAll(PDO::FETCH_CLASS,'Article');
-     return $res[0];
+     if ($res!= NULL){
+       return $res[0];
+     }
   }
 }
   ?>

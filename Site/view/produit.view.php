@@ -49,24 +49,27 @@
       <select name="pdv" onChange="location.href=''+this.options[this.selectedIndex].value+'';">
            <option>PointDeVentes</option>
            <option value="produit.ctrl.php?pdvid=1&valeur=<?=$typeaafficher?>&element=type&tri=prixdecroissant">Fnac</option>
-           <option value="produit.ctrl.php?pdvid=2">LDLC</option>
-           <option value="produit.ctrl.php?pdvid=3">Materiel.net</option>
-           <option value="produit.ctrl.php?pdvid=4">Exalys</option>
-           <option value="produit.ctrl.php?pdvid=5">Orange</option>
+           <option value="produit.ctrl.php?pdvid=2&valeur=<?=$typeaafficher?>&element=type">LDLC</option>
+           <option value="produit.ctrl.php?pdvid=3&valeur=<?=$typeaafficher?>&element=type">Materiel.net</option>
+           <option value="produit.ctrl.php?pdvid=4&valeur=<?=$typeaafficher?>&element=type">Exalys</option>
+           <option value="produit.ctrl.php?pdvid=5&valeur=<?=$typeaafficher?>&element=type">Orange</option>
       </select>
     </form>
 
     <div class="produits">
-    <?php
-     foreach($articlesvoulus as $exemple){
+    <?php if ($articlesvoulus != NULL) {
+      foreach($articlesvoulus as $exemple){
       $cover = $config['image_path'].'/'.$exemple->getPhoto();?>
       <div class="produit">
         <img src="<?=$cover?>" alt="" class="photo">
-        <p><?php echo $exemple->getIntitule() ?></p>
-        <p class="prix"><?php echo $exemple->getPrix() ?> € pièce </p>
-<a class="lien" href="../controler/description.ctrl.php?id=<?php echo $exemple->getReference() ?>"><p class="lien">PLUS D'INFOS</p></a>
+        <p><?php echo $exemple->getIntitule(); ?></p>
+        <p class="prix"><?php echo $exemple->getPrix(); ?> € pièce </p>
+<a class="lien" href="../controler/description.ctrl.php?id=<?php echo $exemple->getReference(); ?>"><p class="lien">PLUS D'INFOS</p></a>
      </div>
-     <?php    }   ?>
+   <?php } }?>
+   <?php if ($articlesvoulus == NULL){ ?>
+     <p>Pas d'articles disponibles pour ce revendeur</p>
+   <?php } ?>
      </div>
   </body>
 </html>

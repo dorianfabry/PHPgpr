@@ -45,11 +45,11 @@ if (isset($_GET['pdvid'])){
     if ($valeur != ''){
       $i=0;
     foreach ($articlesid as $idarticle) {
+      if ($articles->getUnArticleType($idarticle,$valeur) != NULL){
         $articlesvoulus[$i] = $articles->getUnArticleType($idarticle,$valeur);//remplis les articles
         $i++;
+      }
     }
-    var_dump($articlesvoulus);
-  }
   }else{
     $i=0;
     foreach ($articlesid as $idarticle) {
@@ -57,6 +57,7 @@ if (isset($_GET['pdvid'])){
         $i++;
       }
     }
+  }
 }
 
 
