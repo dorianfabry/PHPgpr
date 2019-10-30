@@ -81,5 +81,10 @@
        return $res[0];
      }
   }
+  function addArticle($intitule,$description,$type,$prix,$reference,$urlphoto){
+    $sql = "INSERT INTO article values($reference,$intitule,$description,$type,$prix,$urlphoto);";
+    $sth = $this->db->prepare($sql);
+    $sth->execute();
+  }
 }
   ?>
