@@ -43,7 +43,7 @@
       </li>
 
       <li class="nav-item"><a class="nav-link" href="../controler/produit.ctrl.php">Tous les Produits</a></li>
-      
+
       <li class="nav-item"><a class="nav-link" href="#">Histoires</a></li>
 
       <li class="nav-item"><a class="nav-link" href="#">Assistance</a></li>
@@ -68,7 +68,6 @@
       <img class="d-block w-100" src="img_sites/illustration/SC02673_JBL_Partybox_Banner_2880x1080px.jpg" alt="Third slide">
     </div>
   </div>
-
     </div>
   </section>
 
