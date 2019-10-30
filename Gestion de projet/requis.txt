@@ -1,7 +1,2 @@
-Feuille a rendre +
-
-objectif
-fonctionnalités
-Use case
-MCD
-Passage au relationnel
+Feuille a rendre(fonctionnalités,mode d'emploi) +
+objectif du projet et diagramme des cas d'utilisation, MCD de la base de donnees et passage au relationnel.
