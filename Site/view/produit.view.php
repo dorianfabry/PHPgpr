@@ -35,6 +35,8 @@
             <a class="dropdown-item" href="../controler/produit.ctrl.php?valeur=enceinteportable&element=type">Enceintes Portables</a>
         </li>
 
+        <li class="nav-item"><a class="nav-link" href="../controler/produit.ctrl.php">Tous les Produits</a></li>
+
         <li class="nav-item"><a class="nav-link" href="#">Histoires</a></li>
 
         <li class="nav-item"><a class="nav-link" href="#">Assistance</a></li>

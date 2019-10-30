@@ -35,6 +35,8 @@
             <a class="dropdown-item" href="../controler/produit.ctrl.php?valeur=enceinteportable&element=type">Enceintes Portables</a>
         </li>
 
+        <li class="nav-item"><a class="nav-link" href="../controler/produit.ctrl.php">Tous les Produits</a></li>
+
         <li class="nav-item"><a class="nav-link" href="#">Histoires</a></li>
 
         <li class="nav-item"><a class="nav-link" href="#">Assistance</a></li>
@@ -42,7 +44,7 @@
     </nav>
            <?php $cover = $config['image_path'].'/'.$article->getPhoto();?>
 
-           <h1><a class="flecheretour" href="../controler/produit.ctrl.php"> <img src="../view/img_sites/flecheRetour.png" alt="retour" width='50' heigth='50'> </a> <?=$article->getIntitule()?> </h1>
+           <h1><a class="flecheretour" href="javascript:window.history.go(-1)">  <img src="../view/img_sites/flecheRetour.png" alt="retour" width='50' heigth='50'> </a> <?=$article->getIntitule()?> </h1>
            <div class="all">
 
 
