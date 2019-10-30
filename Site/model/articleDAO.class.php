@@ -82,8 +82,13 @@
      }
   }
   function addArticle($intitule,$description,$type,$prix,$reference,$urlphoto){
-    $sql = "INSERT INTO article values($reference,$intitule,$description,$type,$prix,$urlphoto);";
-    $sth = $this->db->prepare($sql);
+    $stmt = $this->db->prepare("INSERT INTO ARTICLE (reference,intitule,description,type,prix,urlphoto) VALUES (:reference, :intitule, :description, :type, :prix, :urlphoto);");
+    $stmt->bindParam(':reference',$reference);
+    $stmt->bindParam(':intitule',$intitule);
+    $stmt->bindParam(':description',$description);
+    $stmt->bindParam(':type',$type);
+    $stmt->bindParam(':prix',$prix);
+    $stmt->bindParam(':urlphoto',$urlphoto);
     $sth->execute();
   }
 }
