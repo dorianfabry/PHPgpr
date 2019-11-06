@@ -42,17 +42,17 @@
         <li class="nav-item"><a class="nav-link" href="#">Assistance</a></li>
       </ul>
     </nav>
-           <?php $cover = $config['image_path'].'/'.$article->getPhoto();?>
+           <?php $cover = $config['image_path'].'/'.$article->getPhoto();?><!--Url de la photo de l'article -->
 
            <h1><a class="flecheretour" href="javascript:window.history.go(-1)">  <img src="../view/img_sites/flecheRetour.png" alt="retour" width='50' heigth='50'> </a> <?=$article->getIntitule()?> </h1>
            <div class="all">
 
 
-           <div class="gauche" height="80%">
+           <div class="gauche" height="80%"><!-- div gauche : affichage de l'image -->
              <img src="<?=$cover?>" alt="" width="350" height="350">
            </div>
 
-           <div class="droite">
+           <div class="droite"> <!-- div droite : description prix et pdvs de l'article -->
              <p><?=$article->getDescription()?></p>
              <p><?=$article->getPrix()?> € pièce</p>
              <h3>Les points de ventes</h3>
@@ -63,7 +63,7 @@
                foreach($alllatableinter as $articlesaunpdvobj){
                  if (in_array("$idarticle", $articlesaunpdv->getLesIdArticles($articlesaunpdvobj->getIdPointDeVentes()))) {
                    $pdvact = $pointsDeVentes->getLepdv($articlesaunpdvobj->getIdPointDeVentes());
-                   $logo = $pdvact->getLogo();?>
+                   $logo = $pdvact->getLogo();?><!--Une boucle pour afficher les logos des pdvs de l'article  -->
                   <a class="lepdv" href="<?=$pdvact->getUrl();?>"> <img src="../view/img_sites/PointDeVentes/<?=$logo?>" alt="" width="100" height="100"> </a>
                 <?php }
               }?>

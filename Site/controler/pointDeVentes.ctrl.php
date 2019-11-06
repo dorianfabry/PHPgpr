@@ -1,4 +1,5 @@
 <?php
+//Recuperation des fichiers necessaires pour les points de ventes
 require_once('../model/pointDeVentes.class.php');
 require_once('../model/pointDeVentesDAO.class.php');
 

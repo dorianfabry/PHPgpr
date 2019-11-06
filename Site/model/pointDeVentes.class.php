@@ -32,7 +32,7 @@ class pointDeVentes
     return $this->url;
   }
 
-  public function loadPointDeVentesDB(){
+  public function loadPointDeVentesDB(){ //fonction pour generer les objets avec un fichier.txt si besoin
   $tab = NULL;
   $tabarticles = NULL;
   $taball = NULL;
@@ -45,7 +45,7 @@ class pointDeVentes
     $taball[$tab[0]] = $tab;
   }
   return $taball;
-}
+  }
 }
 
  ?>

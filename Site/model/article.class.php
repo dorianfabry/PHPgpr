@@ -2,7 +2,7 @@
 /**
  *
  */
-class Article
+class Article //Description de la classe Article
 {
   public $intitule;
   public $description;
@@ -31,7 +31,7 @@ class Article
     return $this->photo;
   }
 
-  public function load(){
+  public function load(){ //fonction load pour creer des objets articles avec un fichier .txt si besoin
   $taball = NULL;
   $dh = fopen("../model/DATA/articleDATA/articleDB.txt","r");
   for ($i=0; $i < 10; $i++) {
@@ -44,7 +44,7 @@ class Article
 
 }
 
-//test
+//test pour verif le fonctionnement de la classe
 //$art = new Article();
 //$tab = $art->load();
 //var_dump($tab);

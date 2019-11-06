@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!-- Test D'affichage des logos de tous les pdvs -->
 <html lang="fr" dir="ltr">
   <head>
     <meta charset="utf-8">

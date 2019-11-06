@@ -60,16 +60,16 @@
 
     <div class="produits">
     <?php if ($articlesvoulus != NULL) {
-      foreach($articlesvoulus as $exemple){
+      foreach($articlesvoulus as $exemple){ //parcours de la liste des articles à afficher
       $cover = $config['image_path'].'/'.$exemple->getPhoto();?>
       <div class="produit">
         <img src="<?=$cover?>" alt="" class="photo">
-        <p><?php echo $exemple->getIntitule(); ?></p>
+        <p><?php echo $exemple->getIntitule(); ?></p> <!-- pour chaque article on affiche l'intitule le prix la photo et un lien plus d'infos sur l'article souhaite avec sa reference ajoutée query string -->
         <p class="prix"><?php echo $exemple->getPrix(); ?> € pièce </p>
 <a class="lien" href="../controler/description.ctrl.php?id=<?php echo $exemple->getReference(); ?>"><p class="lien">PLUS D'INFOS</p></a>
      </div>
    <?php } }?>
-   <?php if ($articlesvoulus == NULL){ ?>
+   <?php if ($articlesvoulus == NULL){ ?> <!-- Si l'on fait un tri par pointdeventes et qu'il n'y a pas de produits à afficher alors on affiche un message d'info -->
      <p>Pas d'articles disponibles pour ce revendeur</p>
    <?php } ?>
      </div>

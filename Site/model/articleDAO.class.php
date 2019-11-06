@@ -1,4 +1,4 @@
-<?php class articleDAO {
+<?php class articleDAO { //classe article basededonnees
   private $db;
 
   public function __construct($path){
@@ -14,7 +14,7 @@
     }
   }
 
-  public function get($value,$element,$tri){
+  public function get($value,$element,$tri){ //fonction pour recuperer les objets correspondant à une valeur d'un element(type,intitule...) et si tri recuperation triée
     switch ($element) {
       case 'intitule':
       $recherche = $this->db->query("SELECT * FROM article WHERE intitule LIKE '%$value%'");
@@ -60,20 +60,20 @@
     return $resultats;
   }
 
-  function getArticles(){
+  function getArticles(){ //recuperation de tous les articles de la bd
     $req = "SELECT * FROM article";
     $sth=$this->db->query($req);
      $res = $sth->fetchAll(PDO::FETCH_CLASS,'Article');
      return $res;
   }
 
-  function getUnArticle($id){
+  function getUnArticle($id){ //recuperation d'un article avec son id
     $req = "SELECT * FROM article WHERE reference=$id;";
     $sth=$this->db->query($req);
      $res = $sth->fetchAll(PDO::FETCH_CLASS,'Article');
      return $res[0];
   }
-  function getUnArticleType($id,$value){
+  function getUnArticleType($id,$value){ // recuperation d'un article d'un id et d'un type donné
     $req = "SELECT * FROM article WHERE reference=$id AND type='$value';";
     $sth=$this->db->query($req);
      $res = $sth->fetchAll(PDO::FETCH_CLASS,'Article');
@@ -81,7 +81,7 @@
        return $res[0];
      }
   }
-  function addArticle($intitule,$description,$type,$prix,$reference,$urlphoto){
+  function addArticle($intitule,$description,$type,$prix,$reference,$urlphoto){ //essai d'une fonction pour ajouter un article a la bd
     $stmt = $this->db->prepare("INSERT INTO ARTICLE (reference,intitule,description,type,prix,urlphoto) VALUES (:reference, :intitule, :description, :type, :prix, :urlphoto);");
     $stmt->bindParam(':reference',$reference);
     $stmt->bindParam(':intitule',$intitule);

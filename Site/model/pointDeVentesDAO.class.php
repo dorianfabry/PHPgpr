@@ -15,13 +15,13 @@ class pointDeVentesDAO {
     }
   }
 
-  public function get(){
+  public function get(){ //recuperation de tous les objets pointDeVentes de la bd
     $req = "SELECT * FROM POINTDEVENTES;";
     $sth=$this->db->query($req);
     $resultats=$sth->fetchAll(PDO::FETCH_CLASS,'pointDeVentes');
     return $resultats;
   }
-  public function getLepdv($id){
+  public function getLepdv($id){ // recuperation d'un pdv en indiquant son id
     $req = "SELECT * FROM POINTDEVENTES WHERE id=$id;";
     $sth=$this->db->query($req);
     $resultats=$sth->fetchAll(PDO::FETCH_CLASS,'pointDeVentes');

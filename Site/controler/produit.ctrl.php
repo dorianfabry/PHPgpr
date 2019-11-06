@@ -1,4 +1,5 @@
 <?php
+//Recuperation des fichiers necessaires
 require_once('../model/article.class.php');
 require_once('../model/articleDAO.class.php');
 require_once('../model/articlesAUnPointDeVentes.class.php');
@@ -7,20 +8,21 @@ require_once('../model/articlesAUnPointDeVentesDAO.class.php');
 // Récupération des données de configuration
 $config = parse_ini_file('../config/config.ini');
 
-// Creation de l'instance DAO
-$articlesvoulus = NULL;
+$articlesvoulus = NULL; // on initialise a null les articles que l'on souhaite afficher
 
+// Creation de l'instance DAO
 $articles = new articleDAO($config['database_path']);
-if (isset($_GET['valeur'])&&isset($_GET['element'])){
+
+if (isset($_GET['valeur'])&&isset($_GET['element'])){ //Si valeur et element dans la query string
   $value=$_GET['valeur'];
   $elem = $_GET['element'];
-  if (isset($_GET['tri'])) {
+  if (isset($_GET['tri'])) { //et si tri est defini dans la query string
     $tri = $_GET['tri'];
-    $articlesvoulus =$articles->get($value,$elem,$tri);//tri = prixdecroissant
+    $articlesvoulus =$articles->get($value,$elem,$tri);//les articles voulus en fonction des parametres de la query string sont recupérés
     }else{
-    $articlesvoulus = $articles->get($value,$elem,'0');//value = casque et elem = type;
+    $articlesvoulus = $articles->get($value,$elem,'0');//si tri non defini
   }}else{
-    $articlesvoulus =$articles->getArticles();
+    $articlesvoulus =$articles->getArticles(); //si rien dans la query string on recupere tous les articles
 }
 
 
