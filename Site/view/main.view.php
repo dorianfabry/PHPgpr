@@ -44,9 +44,7 @@
 
       <li class="nav-item"><a class="nav-link" href="../controler/produit.ctrl.php">Tous les Produits</a></li>
 
-      <li class="nav-item"><a class="nav-link" href="#">Histoires</a></li>
-
-      <li class="nav-item"><a class="nav-link" href="#">Assistance</a></li>
+      <li class="nav-item"><a class="nav-link" href="assistance.view.php">Assistance</a></li>
 
       <li class="nav-item"> <a style="color:#FF4500;" class="nav-link" href="../view/admin.view.php">Administrateur</a></li>
 
