@@ -37,9 +37,7 @@
 
         <li class="nav-item"><a class="nav-link" href="../controler/produit.ctrl.php">Tous les Produits</a></li>
 
-        <li class="nav-item"><a class="nav-link" href="#">Histoires</a></li>
-
-        <li class="nav-item"><a class="nav-link" href="#">Assistance</a></li>
+        <li class="nav-item"><a class="nav-link" href="assistance.view.php">Assistance</a></li>
       </ul>
     </nav>
            <?php $cover = $config['image_path'].'/'.$article->getPhoto();?><!--Url de la photo de l'article -->
