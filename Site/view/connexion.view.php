@@ -17,7 +17,7 @@
     </p>
 
     <p>
-    <input type="submit" value="Envoyer" href="../view/admin.view.php" >
+  <a href="../view/admin.view.php"><input type="submit" value="Envoyer"  ></a> 
     <input type="reset" value="Annuler">
     </p>
   </body>
